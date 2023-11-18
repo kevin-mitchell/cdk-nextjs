@@ -6,7 +6,7 @@ import * as lambda from 'aws-cdk-lib/aws-lambda';
 import { FunctionOptions } from 'aws-cdk-lib/aws-lambda';
 import * as s3 from 'aws-cdk-lib/aws-s3';
 import { Construct } from 'constructs';
-import { BaseSiteDomainProps, NextjsBaseProps } from './NextjsBase';
+import { NextjsBaseProps } from './NextjsBase';
 import { NextjsBuild } from './NextjsBuild';
 import { NextjsDistribution, NextjsDistributionProps } from './NextjsDistribution';
 import { NextjsImage } from './NextjsImage';
@@ -14,8 +14,6 @@ import { NextjsInvalidation } from './NextjsInvalidation';
 import { NextjsRevalidation } from './NextjsRevalidation';
 import { NextjsServer } from './NextjsServer';
 import { NextjsStaticAssets, NextjsStaticAssetsProps } from './NextjsStaticAssets';
-
-export interface NextjsDomainProps extends BaseSiteDomainProps {}
 
 /**
  * Defaults for created resources.
